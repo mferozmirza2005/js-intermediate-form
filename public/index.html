@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Board Of Intermediate Education, Karachi</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>BOARD OF INTERMEDIATE EDUCATION, KARACHI</h1>
+    <p>EXAMINATION FORM FOR H.S.C. PART-I COMMERCE GROUP</p>
+    <p>FOR PRIVATE CANDIDATES ANNUAL <span id="dateAnnual"></span></p>
+    <div>
+      <p>COMMERCE PRIVATE GROUP</p>
+    </div>
+  </header>
+  <div class="userImg" id="userImg">
+    <h4>CANDIDATE IMAGE</h4>
+    <div id="cendImg"></div>
+    <br />
+    <input type="file" name="" id="cendLoad" accept="image/png , image/jpg" />
+  </div>
+  <div class="warning" id="warning">
+    <p>
+      <b>Note:</b> Normal form would not be accepted. please give your correct
+      address and phone number. so if we will any problem with your details we
+      will inform you. otherwise board is not responsible for any problem.
+    </p>
+  </div>
+  <div class="form" id="form">
+    <fieldset>
+      <legend>EXAMINATION FORM FOR H.S.C. PART-I COMMERCE GROUP</legend>
+      <div class="name">
+        <p>Name:</p>
+        <input type="text" name="" id="Name" />
+      </div>
+      <div class="Fname">
+        <p>Father Name:</p>
+        <input type="text" name="" id="FName" />
+      </div>
+      <div class="detSum">
+        <div class="dob">
+          <p>Date of Birth:</p>
+          <input type="date" name="" id="birth" />
+        </div>
+        <div class="nation">
+          <p>Nationality:</p>
+          <select name="" id="Nationality">
+            <option value="pak">Pakistan</option>
+            <option value="turk">Turkey</option>
+            <option value="afgan">Afganistan</option>
+            <option value="canada">Canada</option>
+            <option value="ind">India</option>
+            <option value="us">us</option>
+            <option value="nepal">Nepal</option>
+          </select>
+        </div>
+        <div class="religion">
+          <p>Religion:</p>
+          <select name="" id="Religion">
+            <option value="muslim">Muslim</option>
+            <option value="hindu">Hindu</option>
+            <option value="cristian">Cristian</option>
+          </select>
+        </div>
+        <div class="gender">
+          <p>Gender:</p>
+          <div class="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male" />
+          </div>
+          <div class="female">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female" />
+          </div>
+        </div>
+      </div>
+      <div class="address">
+        <p>Residensial Address:</p>
+        <textarea name="" id="address"></textarea>
+      </div>
+      <div class="cont">
+        <div class="cnic">
+          <p>CNIC: <span>please do not give "-" in number</span></p>
+          <input type="text" name="" id="cnic" />
+        </div>
+        <div class="contect">
+          <p>Contect:</p>
+          <input type="text" name="" id="contect" />
+        </div>
+      </div>
+      <div class="more">
+        <div class="identify">
+          <p>MARK OF IDENTIFICATION:</p>
+          <input type="text" name="" id="identity" />
+        </div>
+        <div class="pcode">
+          <p>POST CODE:</p>
+          <input type="text" name="" id="pcode" />
+        </div>
+      </div>
+      <div class="detprev">
+        <p>DETAILS OF PREVIOUS EXAMINATIONS PASSED / CLEARED</p>
+        <table>
+          <tr>
+            <th>S.NO</th>
+            <th>1</th>
+            <th>2</th>
+          </tr>
+          <tr>
+            <th>NAME OF EXAMINATION</th>
+            <th>S.S.C. OR EQUIVALENT</th>
+            <th>
+              H.S.C. PART-I <br />
+              (EXTERNAL)
+            </th>
+          </tr>
+          <tr>
+            <th>BOARD / EXAMINATION BODY</th>
+            <td>
+              <input type="text" name="" id="bZero" />
+            </td>
+            <td>
+              <input type="text" name="" id="bOne" />
+            </td>
+          </tr>
+          <tr>
+            <th>ROLL NO.</th>
+            <td>
+              <input type="text" name="" id="rZero" />
+            </td>
+            <td>
+              <input type="text" name="" id="rOne" />
+            </td>
+          </tr>
+          <tr>
+            <th>GROUP</th>
+            <td>
+              <input type="text" name="" id="gZero" />
+            </td>
+            <td>
+              <input type="text" name="" id="gOne" />
+            </td>
+          </tr>
+          <tr>
+            <th>YEAR</th>
+            <td>
+              <input type="text" name="" id="yZero" />
+            </td>
+            <td>
+              <input type="text" name="" id="yOne" />
+            </td>
+          </tr>
+          <tr>
+            <th>GRADE + MARKS</th>
+            <td>
+              <input type="text" name="" id="gmZero" />
+            </td>
+            <td>
+              <p>NO. OF PAPERS CLEARED</p>
+              <input type="text" name="" id="gmOne" />
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="submit">
+        <button onclick="submit()">submit</button>
+      </div>
+    </fieldset>
+  </div>
+
+  <div class="recieved" id="recieved">
+    <h1>Candidate Form Details</h1>
+    <div id="recievedImg"></div>
+    <p>Name: <span id="r1"></span></p>
+    <p>Father Name: <span id="r2"></span></p>
+    <p>Date of Birth: <span id="r3"></span></p>
+    <p>Nationality: <span id="r4"></span></p>
+    <p>Religion: <span id="r5"></span></p>
+    <p>Gender: <span id="r6"></span></p>
+    <p>Residensial Address: <span id="r7"></span></p>
+    <p>CNIC No: <span id="r8"></span></p>
+    <p>Contect No: <span id="r9"></span></p>
+    <p>Mark of Identification: <span id="r10"></span></p>
+    <p>Post Code: <span id="r11"></span></p>
+    <h3>NO. of PAPERS CLEARED AMINATIONS PASSED / CLEARED</h3>
+    <table>
+      <tr>
+        <th>S.NO</th>
+        <th>1</th>
+        <th>2</th>
+      </tr>
+      <tr>
+        <th>NAME OF EXAMINATION</th>
+        <th>S.S.C. OR EQUIVALENT</th>
+        <th>
+          H.S.C. PART-I <br />
+          (EXTERNAL)
+        </th>
+      </tr>
+      <tr>
+        <th>BOARD / EXAMINATION BODY</th>
+        <td>
+          <span id="r12"></span>
+        </td>
+        <td>
+          <span id="r13"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>ROLL NO.</th>
+        <td>
+          <span id="r14"></span>
+        </td>
+        <td>
+          <span id="r15"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>GROUP</th>
+        <td>
+          <span id="r16"></span>
+        </td>
+        <td>
+          <span id="r17"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>YEAR</th>
+        <td>
+          <span id="r18"></span>
+        </td>
+        <td>
+          <span id="r19"></span>
+        </td>
+      </tr>
+      <tr>
+        <th>GRADE + MARKS</th>
+        <td>
+          <span id="r20"></span>
+        </td>
+        <td>
+          <span id="r21"></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  </div>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
